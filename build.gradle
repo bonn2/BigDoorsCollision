@@ -10,6 +10,7 @@ targetCompatibility = '1.8'
 
 repositories {
     mavenCentral()
+    mavenLocal()
     maven {
         name = 'spigotmc-repo'
         url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
@@ -21,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.15.2-R0.1-SNAPSHOT'
+    compileOnly 'org.spigotmc:spigot:1.15.2-R0.1-SNAPSHOT'
     compile files('C:\\Users\\bbonifas\\Documents\\Minecraft\\Plugins\\BigDoors.jar')
 }
 
