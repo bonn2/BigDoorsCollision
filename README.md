@@ -2,6 +2,7 @@
 Adds rudimentary collision to the BigDoors plugin
 
 WARNINGS: 
+- THIS WILL ONLY WORK ON 1.15
 - DO NOT USE THIS ON A RELEASE SERVER
 - MAKE BACKUPS FREQUENTLY
 - THERE WILL BE BUGS
