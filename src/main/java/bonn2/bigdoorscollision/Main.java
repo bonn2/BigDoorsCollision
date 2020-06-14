@@ -2,6 +2,7 @@ package bonn2.bigdoorscollision;
 
 import bonn2.bigdoorscollision.listeners.DoorToggleEnd;
 import bonn2.bigdoorscollision.listeners.DoorToggleStart;
+import bonn2.bigdoorscollision.utils.Metrics;
 import bonn2.bigdoorscollision.utils.MovingDoor;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
@@ -23,6 +24,9 @@ public final class Main extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new DoorToggleStart(), this);
         getServer().getPluginManager().registerEvents(new DoorToggleEnd(), this);
+
+        int pluginId = 7860; // <-- Replace with the id of your plugin!
+        Metrics metrics = new Metrics(this, pluginId);
 
         tick();
     }
