@@ -1,5 +1,5 @@
 name: BigDoorsCollision
-version: 0.1.0-alpha
+version: 0.1.1-alpha
 api-version: 1.15
 main: bonn2.bigdoorscollision.Main
 depend: [BigDoors]

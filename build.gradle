@@ -3,7 +3,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 apply plugin: 'java'
 
 group = 'BigDoorsCollision'
-version = 'v0.1.0-alpha'
+version = 'v0.1.1-alpha'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
