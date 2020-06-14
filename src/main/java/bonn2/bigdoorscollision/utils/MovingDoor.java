@@ -126,8 +126,8 @@ public class MovingDoor {
     }
 
     public void removeEntities() {
+        // Kill entities when they are in the void to remove partials, animation, and drops
         for (CollisionShulker shulker : shulkers) {
-            // Kill entities when they are in the void to remove partials, animation, and drops
             Location location = shulker.getStartingLocation();
             shulker.setHealth(0);
             shulker.teleportAndSync(location.getX(), -10, location.getZ());
