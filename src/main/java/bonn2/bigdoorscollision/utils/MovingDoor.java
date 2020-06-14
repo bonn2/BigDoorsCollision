@@ -5,6 +5,7 @@ import nl.pim16aap2.bigDoors.NMS.CustomCraftFallingBlock_Vall;
 import nl.pim16aap2.bigDoors.moveBlocks.*;
 import nl.pim16aap2.bigDoors.util.MyBlockData;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 
@@ -79,6 +80,7 @@ public class MovingDoor {
     private void spawnShulkers() {
         // Create a shulker for each block
         for (MyBlockData myBlockData : blocks) {
+            if (myBlockData.getMat().equals(Material.AIR)) continue;
             Location startingLocation = myBlockData.getStartLocation();
             BigDoorsVector2D vector2DLocation = new BigDoorsVector2D(
                     startingLocation.getWorld(),
