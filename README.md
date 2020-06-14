@@ -1,5 +1,5 @@
 # BigDoorsCollision
-Adds rudamentarty collision to the BigDoors plugin
+Adds rudimentary collision to the BigDoors plugin
 
 Method:
 The current method uses invisible shulkers to create the hitboxes
